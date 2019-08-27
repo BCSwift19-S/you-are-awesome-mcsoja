@@ -28,19 +28,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Ro-x8G">
-                                <rect key="frame" x="155" y="155" width="104" height="30"/>
+                                <rect key="frame" x="32" y="155" width="104" height="30"/>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7L-An-imU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-6f-vzy">
+                                <rect key="frame" x="219" y="155" width="163" height="30"/>
+                                <state key="normal" title="Show Another Message"/>
+                                <connections>
+                                    <action selector="showAnotherMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEr-UC-kZ5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1H-6f-vzy" secondAttribute="trailing" constant="32" id="4xb-dK-Fzk"/>
                             <constraint firstAttribute="trailing" secondItem="iiD-8H-NU8" secondAttribute="trailing" constant="16" id="FiK-AZ-ofv"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="Mnc-CX-OdC"/>
+                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ZIu-O3-76Q"/>
+                            <constraint firstItem="T1H-6f-vzy" firstAttribute="top" secondItem="iiD-8H-NU8" secondAttribute="bottom" constant="5" id="fr5-Hm-ZEc"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="n4H-vR-YUq"/>
-                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfR-Ad-NqS"/>
                             <constraint firstItem="oyy-Ro-x8G" firstAttribute="top" secondItem="iiD-8H-NU8" secondAttribute="bottom" constant="5" id="uLS-wQ-qh8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
