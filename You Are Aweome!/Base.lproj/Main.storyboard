@@ -27,9 +27,8 @@
                                 <color key="textColor" red="0.46422517299999999" green="0.1109535173" blue="0.078392378989999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Ro-x8G">
-                                <rect key="frame" x="155" y="158" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Ro-x8G">
+                                <rect key="frame" x="155" y="155" width="104" height="30"/>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7L-An-imU"/>
@@ -41,6 +40,8 @@
                             <constraint firstAttribute="trailing" secondItem="iiD-8H-NU8" secondAttribute="trailing" constant="16" id="FiK-AZ-ofv"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="Mnc-CX-OdC"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="n4H-vR-YUq"/>
+                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfR-Ad-NqS"/>
+                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="top" secondItem="iiD-8H-NU8" secondAttribute="bottom" constant="5" id="uLS-wQ-qh8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
