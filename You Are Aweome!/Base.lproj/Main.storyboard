@@ -28,20 +28,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Ro-x8G">
-                                <rect key="frame" x="155" y="155" width="104" height="30"/>
+                                <rect key="frame" x="119.5" y="158" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ukR-OJ-7eS"/>
+                                    <constraint firstAttribute="width" constant="175" id="y3k-Ws-KHC"/>
+                                </constraints>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7L-An-imU"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bclogo" translatesAutoresizingMaskIntoConstraints="NO" id="zep-7K-Q3p">
+                                <rect key="frame" x="16" y="196" width="382.00000000000006" height="628"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiD-8H-NU8" secondAttribute="trailing" constant="16" id="Dn9-Mr-bS6"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="Mnc-CX-OdC"/>
-                            <constraint firstItem="iiD-8H-NU8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="n4H-vR-YUq"/>
+                            <constraint firstItem="zep-7K-Q3p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oac-bR-Pcg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zep-7K-Q3p" secondAttribute="bottom" constant="38" id="QUa-V7-E0e"/>
+                            <constraint firstItem="zep-7K-Q3p" firstAttribute="top" secondItem="oyy-Ro-x8G" secondAttribute="bottom" constant="8" id="Yec-or-ds5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zep-7K-Q3p" secondAttribute="trailing" constant="16" id="Zc3-cm-g3c"/>
+                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="top" secondItem="iiD-8H-NU8" secondAttribute="bottom" constant="8" id="oyW-5W-xlr"/>
                             <constraint firstItem="iiD-8H-NU8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="q92-ov-eqc"/>
-                            <constraint firstItem="oyy-Ro-x8G" firstAttribute="top" secondItem="iiD-8H-NU8" secondAttribute="bottom" constant="5" id="uLS-wQ-qh8"/>
                             <constraint firstItem="oyy-Ro-x8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wna-cl-pgz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,4 +65,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bclogo" width="253" height="228"/>
+    </resources>
 </document>
