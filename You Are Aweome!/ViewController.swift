@@ -33,7 +33,9 @@ class ViewController: UIViewController {
 //    if index == messages.count{
 //        index = 0
 //    }
-        var newIndex = -1
+        //var newIndex = -1
+        
+        var newIndex: Int
         
         repeat{
             newIndex = Int.random(in: 0..<messages.count)
