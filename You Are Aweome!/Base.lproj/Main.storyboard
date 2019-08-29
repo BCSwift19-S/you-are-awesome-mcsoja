@@ -38,8 +38,8 @@
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7L-An-imU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bclogo" translatesAutoresizingMaskIntoConstraints="NO" id="zep-7K-Q3p">
-                                <rect key="frame" x="16" y="196" width="382.00000000000006" height="628"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc1" translatesAutoresizingMaskIntoConstraints="NO" id="zep-7K-Q3p">
+                                <rect key="frame" x="16" y="196" width="382" height="628"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="awesomeImageView" destination="zep-7K-Q3p" id="FkP-7j-1bq"/>
                         <outlet property="messageLabel" destination="iiD-8H-NU8" id="VId-Kc-EzD"/>
                     </connections>
                 </viewController>
@@ -66,6 +67,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bclogo" width="253" height="228"/>
+        <image name="bc1" width="253" height="228"/>
     </resources>
 </document>
