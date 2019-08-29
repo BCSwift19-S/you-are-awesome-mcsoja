@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,60 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxh-O9-wPx">
+                                <rect key="frame" x="16" y="94" width="382" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="t8J-8M-4Lm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.46422517299999999" green="0.1109535173" blue="0.078392378989999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh6-Vv-QHb">
+                                <rect key="frame" x="119.5" y="202" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E8q-pQ-9fM"/>
+                                    <constraint firstAttribute="width" constant="175" id="Kg8-lF-Iog"/>
+                                </constraints>
+                                <state key="normal" title="Show Message"/>
+                                <connections>
+                                    <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufw-OK-m6Z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc1" translatesAutoresizingMaskIntoConstraints="NO" id="Sij-Jh-ONY">
+                                <rect key="frame" x="16" y="240" width="382.00000000000006" height="584"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxh-O9-wPx" secondAttribute="trailing" constant="16" id="1cY-wp-RqA"/>
+                            <constraint firstItem="fh6-Vv-QHb" firstAttribute="top" secondItem="hxh-O9-wPx" secondAttribute="bottom" constant="8" id="GxG-fA-TYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sij-Jh-ONY" secondAttribute="trailing" constant="16" id="H8T-kX-hGE"/>
+                            <constraint firstItem="hxh-O9-wPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TeD-fb-rjf"/>
+                            <constraint firstItem="fh6-Vv-QHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLB-AG-wdI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sij-Jh-ONY" secondAttribute="bottom" constant="38" id="Zbv-zo-t3R"/>
+                            <constraint firstItem="hxh-O9-wPx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="clk-X8-v3W"/>
+                            <constraint firstItem="Sij-Jh-ONY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fYt-UM-kzK"/>
+                            <constraint firstItem="Sij-Jh-ONY" firstAttribute="top" secondItem="fh6-Vv-QHb" secondAttribute="bottom" constant="8" id="xfe-85-Fia"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="awesomeImageView" destination="Sij-Jh-ONY" id="gcq-5X-ta8"/>
+                        <outlet property="messageLabel" destination="hxh-O9-wPx" id="RVj-e9-ZPe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bc1" width="253" height="228"/>
+    </resources>
 </document>
